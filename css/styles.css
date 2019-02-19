@@ -237,3 +237,26 @@ figure{
     }
 
 }
+
+
+/* unvisited link */
+a:link {
+    color: darkturquoise;
+}
+
+/* visited link mustard yellow rgba(255, 219, 88, 1)*/
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: lightslategrey;
+}
+
+/* selected link */
+a:active {
+    color: darkturquoise;
+}
+
+
