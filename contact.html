@@ -1,33 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/styles.css">
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>About</title>
+  <link rel="stylesheet" href="css/alison.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ccsalison-Alison Chan</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">ccsalison</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="AlisonResume.pdf">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
 
-<header>
-    <h1 align = "center">ccsalison</h1>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="AlisonResume.pdf">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
 
-    <nav>
-        <ul class="unstyled-list">
-            <li><a href="index.html">Home</a> </li>
-            <li><a href="about.html">About</a> </li>
-            <li><a href="contact.html">Contact</a> </li>
-        </ul>
-    </nav>
-</header>
-    <section class="contact">
-    <img src="img/Thinking_meme.jpg" alt="I'm thinking.">
-    I don't know what I'm doing, but, ok. <br>
-    </section>
-</body>
+<!-- START OF TEMPLATE -->
+<!-- icon: https://material.io/tools/icons/?icon=email&style=baseline -->
 
-<footer>
+<script type="text/javascript">
+  function validate(){
+    var contact_name = document.getElementById("name");
+    var contact_email = document.getElementById("email");
+    var contact_subject = document.getElementById("subject");
+    var contact_message = document.getElementById("message");
 
-    <img src="img/heart.png" alt="<3" style="width:12px ;height:auto;"><a href="https://github.com/ccsalison" style="text-decoration: none;"> GitHub</a><br>
-    <img src="img/heart.png" alt="<3" style="width:12px ;height:auto;"><a href="https://www.linkedin.com/in/ccsalison/" style="text-decoration: none;"> LinkedIn</a>
-</footer>
+    if(contact_name.value == "" || contact_email == "" ||
+    contact_subject == "" || contact_message == ""){
+      alert("Please fill in all the fields.");
+      return false;
+    }
+  }
+</script>
+
+
+<br><br>
+
+<div class="contact-form">
+  <h4>Email Me</h4><br>
+  <!--<form name="myForm" action="validate_form.php"  onsubmit="return validateForm()" method="post">-->
+  <!--
+  <form name="myForm"  method="post" action="mailto.php">
+
+      <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="name" type="text" class="validate">
+          <label for="name">Name</label>
+        </div>
+
+      <div class="input-field col s12">
+        <i class="material-icons prefix">email</i>
+        <input id="email" type="email" class="validate">
+        <label for="email">Email</label>
+      </div>
+
+      <div class="input-field col s6">
+          <i class="material-icons prefix">mood</i>
+          <input id="subject" type="text" class="validate">
+          <label for="subject">Subject</label>
+        </div>
+
+        <div class="input-field col s12">
+          <i class="material-icons prefix">chat_bubble</i>
+          <textarea id="message" class="materialize-textarea"></textarea>
+          <label for="message">Message</label>
+        </div>
+
+        <button class="btn waves-effect waves-light" type="submit" name="action" onclick="validate()">Submit
+          <i class="material-icons right">send</i>
+        </button>
+  </form>
+  -->
+  alisonchan617@gmail.com
+</div>
+
+<br><br>
+
+
+
+
+<!-- END OF TEMPLATE -->
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Bio</h5>
+          <p class="grey-text text-lighten-4">I am interested in full stack developer position. Looking for a fast paced learning environment, ie. startup for my next job opportunity.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Projects on GitHub</h5>
+          <ul>
+            <li><a class="white-text" href="https://github.com/ccsalison/ccsalison.github.io">Portfolio landing page</a></li>
+            <li><a class="white-text" href="https://github.com/ccsalison/todo-app">Todo app</a></li>
+            <li><a class="white-text" href="https://github.com/ccsalison/ccsalison/tree/master/ParallelProgramming">Parallel Programming</a></li>
+            <li><a class="white-text" href="https://github.com/ccsalison/FRDM-Fighter">The Freescale Cup 2015</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">WIP Projects</h5>
+          <ul>
+            <li><a class="white-text" href="https://github.com/ccsalison/lol">Gaming duration alert - LoL</a></li>
+            <li><a class="white-text" href="https://github.com/ccsalison/books-app">Book review app</a></li>
+
+            <!--<li><a class="white-text" href="#!">Link 4</a></li>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by Alison, powered by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
 </html>
