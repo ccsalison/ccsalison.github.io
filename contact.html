@@ -34,18 +34,34 @@
 <!-- icon: https://material.io/tools/icons/?icon=email&style=baseline -->
 
 <script type="text/javascript">
-  function validate(){
-    var contact_name = document.getElementById("name");
-    var contact_email = document.getElementById("email");
-    var contact_subject = document.getElementById("subject");
-    var contact_message = document.getElementById("message");
+  // $(document).ready(function(){
+  //   $('#Submit').click(function(){
+  //     var contact_name = $('#name').val();
+  //     var contact_email = $('#email').val();
+  //     var contact_subject = $('#subject').val();
+  //     var contact_message = $('#message').val();
+  //
+  //       if(contact_name.value == "" || contact_email == "" ||
+  //       contact_subject == "" || contact_message == ""){
+  //         alert("Please fill in all the fields.");
+  //         return false;
+  //       }
+  //
+  //   });
+  // });
 
-    if(contact_name.value == "" || contact_email == "" ||
-    contact_subject == "" || contact_message == ""){
-      alert("Please fill in all the fields.");
-      return false;
-    }
-  }
+  // function validate(){
+  //   var contact_name = document.getElementById("name");
+  //   var contact_email = document.getElementById("email");
+  //   var contact_subject = document.getElementById("subject");
+  //   var contact_message = document.getElementById("message");
+  //
+  //   if(contact_name.value == "" || contact_email == "" ||
+  //   contact_subject == "" || contact_message == ""){
+  //     alert("Please fill in all the fields.");
+  //     return false;
+  //   }
+  // }
 </script>
 
 
@@ -54,8 +70,9 @@
 <div class="contact-form">
   <h4>Email Me</h4><br>
   <!--<form name="myForm" action="validate_form.php"  onsubmit="return validateForm()" method="post">-->
-
-  <form name="myForm"  method="post" action="mailto.php">
+  <!--<form name="myForm"  method="post" action="mailto.php">-->
+  <!--
+  <form name="myForm"  method="post">
 
       <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
@@ -81,12 +98,20 @@
           <label for="message">Message</label>
         </div>
 
-        <button class="btn waves-effect waves-light" type="submit" name="action" onclick="validate(); return false;">Submit
+        <!--
+        <button class="btn waves-effect waves-light" type="submit" name="action" onclick="validate(); return false;">Submit-->
+<!--
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+
           <i class="material-icons right">send</i>
         </button>
   </form>
+-->
 
-  alisonchan617@gmail.com
+  <a  href="mailto:alisonchan617@gmail.com" class="waves-effect waves-light btn">Send an email<i class="material-icons right">send</i></a>
+
+  <br>
+
 </div>
 
 <br><br>
