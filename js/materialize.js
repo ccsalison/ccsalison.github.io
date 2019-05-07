@@ -5080,6 +5080,7 @@ $jscomp.polyfill = function (e, r, p, m) {
   window.Waves = Waves;
 
   document.addEventListener('DOMContentLoaded', function () {
+
     Waves.displayEffect();
   }, false);
 })(window);
@@ -7023,7 +7024,8 @@ $jscomp.polyfill = function (e, r, p, m) {
   $(document).ready(function () {
     // var triggerObject = { hover: false };
     // $(".dropdown-trigger").dropdown(triggerObject);
-    $(".dropdown-trigger").dropdown();
+    $(".dropdown-trigger").dropdown({ hover: false });
+    $('.carousel').carousel();
 
     // Text based inputs
     var input_selector = 'input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=search], input[type=date], input[type=time], textarea';
